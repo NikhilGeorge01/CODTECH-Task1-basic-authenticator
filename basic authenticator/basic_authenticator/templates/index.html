@@ -1,0 +1,22 @@
+
+{%extends "base.html"%}
+
+{% block title%}
+ Index
+{%endblock%}
+
+{% block other%}
+
+  <div class="jumbotron">
+    <h1 class="display-4">Basic Authenticator</h1>
+    <p class="lead">To Use Authenticator please do SIGN UP</p>
+    <hr class="my-4">
+    <p>If you are an existing user please login</p>
+    <a class="btn btn-primary btn-lg" href="{{url_for('signup')}}" role="button">Sign Up</a>
+    <a class="btn btn-primary btn-lg" href="{{url_for('login')}}" role="button">Log In</a>
+  </div>
+
+{%endblock%}
+
+    
+

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% from 'form_macros.html' import render_field %}
+
+{% block title %}
+   Home
+{% endblock %}
+
+{% block content %}
+<h1>Hello {{ current_user.username }}!</h1>
+<h2> Dont worry your passwords are totally safe :),Our code is secure because it hashes passwords with a strong algorithm and adds a random salt to ensure uniqueness. This way, even if the database is breached, the actual passwords remain protected. </h2>
+
+{% endblock %}
+
